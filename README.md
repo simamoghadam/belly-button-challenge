@@ -1,8 +1,6 @@
 # belly-button-challenge
 
 <<<<<<< HEAD
-
-Click here to view the live project https://github.com/matin-n/Belly-Button-Biodiversity/blob/main/README.md
 =======
 please click the link to view the live project :" https://simamoghadam.github.io/belly-button-challenge/ " .
 
