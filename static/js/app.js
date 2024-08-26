@@ -1,26 +1,24 @@
 // Build the metadata panel
 function buildMetadata(sample) {
   d3.json("https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json").then((data) => {
-    
-    
+
     // Get the metadata field
-    let data = data.metadata;
-    
+    let metadata = data.metadata;
+   
     // Filter the metadata for the object with the desired sample number
     let resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
     let result = resultArray[0];
-
-
+   
     // Use d3 to select the panel with id of `#sample-metadata`
     let PANEL = d3.select("#sample-metadata");
 
     // Use `.html("") to clear any existing metadata
-    panel.html("");
+    PANEL.html("");
 
     // Inside a loop, you will need to use d3 to append new
     // tags for each key-value in the filtered metadata.
     Object.entries(result).forEach(([key, value]) => {
-     panel.append("h6").text(`${key.toUpperCase()}: ${value}`);
+      PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
     });
   })
 }
@@ -31,7 +29,6 @@ function buildCharts(sample) {
     // Get the samples field
 
     let samples = data.samples;
-    
     // Filter the samples for the object with the desired sample number
 
     let resultArray = samples.filter(sampleObj => sampleObj.id == sample);
@@ -56,7 +53,7 @@ function buildCharts(sample) {
     }];
 
     let bubbleLayout = {
-      title: "Baceria Culture Per Sample",
+      title: "Bacteria Culture Per Sample",
       margin: { t: 30, l: 50 },
       hovermode: "closest",
       xaxis: { title: "OTU ID" },
@@ -70,7 +67,7 @@ function buildCharts(sample) {
 
     // Build a Bar Chart
     // Don't forget to slice and reverse the input data appropriately
-    let barData = [{ 
+    let barData = [{
       y: yticks,
       x: sample_values.slice(0, 10).reverse(),
       text: otu_labels.slice(0, 10).reverse(),
