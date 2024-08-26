@@ -16,9 +16,9 @@ y-axis: OTU IDs (labelled as OTU ID).
 
 Bars: Represent the count of each bacterial species, ordered by frequency, with the most abundant species at the top.
 
-Purpose:
+Purpose:To identify which bacterial species are most prevalent in the sample.
 
-To identify which bacterial species are most prevalent in the sample.
+
 
 Bubble Chart
 
@@ -30,9 +30,9 @@ y-axis: Number of bacteria
 
 Bubbles: Represent individual OTUs. The size of each bubble corresponds to the abundance of that OTU, and the color represents different OTU IDs.
 
-Purpose:
+Purpose:To provide a detailed view of the distribution and abundance of different bacterial species in the sample. It helps in understanding the relative abundance of each OTU.
 
-To provide a detailed view of the distribution and abundance of different bacterial species in the sample. It helps in understanding the relative abundance of each OTU.
+
 
 Deployment:
 
