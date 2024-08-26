@@ -7,7 +7,6 @@ The goal of this project is to create an interactive dashboard that visualizes b
 
 
 Bar Chart
-What it Shows:
 
 The Bar Chart displays the top 10 bacterial species (OTUs) found in the selected sample.
 
@@ -22,18 +21,19 @@ Purpose:
 To identify which bacterial species are most prevalent in the sample.
 
 Bubble Chart
-What it Shows:
 
+The Bubble Chart visualises the relationship between bacterial species and their abundance in the selected sample.
 
-The Bubble Chart visualizes the relationship between bacterial species and their abundance in the selected sample.
+x-axis: OTU IDs 
 
-x-axis: OTU IDs (Operational Taxonomic Units).
-
-y-axis: Number of bacteria (sample values).
+y-axis: Number of bacteria
 
 Bubbles: Represent individual OTUs. The size of each bubble corresponds to the abundance of that OTU, and the color represents different OTU IDs.
+
 Purpose:
+
 To provide a detailed view of the distribution and abundance of different bacterial species in the sample. It helps in understanding the relative abundance of each OTU.
 
 Deployment:
+
 deploying the dashboard makes it accessible online, allowing users to interact with the visualizations and data through a web browser.
