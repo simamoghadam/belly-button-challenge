@@ -1,7 +1,5 @@
 # belly-button-challenge
 
-<<<<<<< HEAD
-=======
 please click the link to view the live project :" https://simamoghadam.github.io/belly-button-challenge/ " .
 
 Goal:
@@ -39,4 +37,4 @@ Purpose:To provide a detailed view of the distribution and abundance of differen
 Deployment:
 
 deploying the dashboard makes it accessible online, allowing users to interact with the visualizations and data through a web browser.
->>>>>>> 18d7f6e72d3492856c1cc01e05f3f982d566d627
+
